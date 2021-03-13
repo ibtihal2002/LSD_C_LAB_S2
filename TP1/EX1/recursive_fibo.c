@@ -1,6 +1,17 @@
-#include "header.h"
+#include<stdio.h>
+#include<stdlib.h>
 
-int recursive_fibo(int n)
+int fibo_rec(int n)
 {
-    // write your recursive fibo code here
+	if(n==0||n==1)
+		return n;
+	else
+		return (fibo_rec(n-1)+fibo_rec(n-2));
+}
+
+int main()
+{
+	int n;
+	printf("donner le nombre n: ");
+	scan("%d",&n);
 }
