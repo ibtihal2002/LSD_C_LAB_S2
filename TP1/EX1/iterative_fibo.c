@@ -23,6 +23,8 @@ int main()
 {
 	int n;
 	printf("donner la valeur de n:\n");
+	scanf("%d",&n);
 	fibo_iterative(n);
+	
 
 }
