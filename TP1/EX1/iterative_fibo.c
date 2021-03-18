@@ -21,3 +21,11 @@ int fibo_iterative(int n)
         }
 }
 
+int main()
+{
+	int n;
+	printf("donner la valeur de n:\n");
+	scanf("%d",&n);
+	fn = fibo_iterative(n);
+}
+
