@@ -5,7 +5,9 @@
 
 int fibo_iterative(int n)
 {
-	int fn,f1,f2;
+	int fn
+	int f1=0
+	int f2=1
 	if(n==0||n==1)
 		return n;
 	else
