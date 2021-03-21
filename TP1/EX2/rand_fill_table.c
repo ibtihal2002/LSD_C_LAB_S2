@@ -9,4 +9,12 @@
 void rand_fill_table(int *tab, int size)
 {
     // fill up your table here with randome elements between 10 and 100
+    int size=100;
+    int *tab[size];
+    for(int i=0;i<size;i++)
+    {
+        *tab[i] = 1 + rand() % 20;
+        printf("%d",*tab[i]);
+    }
+    
 }
