@@ -9,10 +9,26 @@
 static bool    is_prime_opt(int n)
 {
     // write is_prime function code here
+  int i=2;
+  while(i<(sqrt((double)n)))
+  {
+    if (n%i == 0)
+      return FALSE;
+    else
+      return TRUE;
+    i++ ;
+   }
+
 }
 
 
 void    get_primes_opt(int n)
 {
     // write get_primes_opt function code here that use is_prime_opt function
+     for(int i =2; i<=n; i++)
+     {
+          if (isprimeop(i)==1)
+             printf("%d\n",i);
+     }
+    return;
 }
