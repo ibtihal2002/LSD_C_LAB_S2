@@ -9,11 +9,32 @@
 static bool    is_prime(int n)
 {
     // write is_prime function code here
+  if (n == 0)
+    return FALSE;
+  if (n == 1)
+    return TRUE;
+  if (n%2 == 0)
+    return FALSE;
+  int i;
+    for (i=2 ; i < n;i++)
+      {
+        if (n%i == 0)
+          return FALSE;
+        return TRUE;
+      }
 }
 
 
 void    get_primes(int n)
 {
     // write get_primes function code here that use is_prime function
+  if (n == 1)
+      return;
+  for(int i =2; i<n; i++)
+    {
+      if (isprime(i))
+        printf("%d\n",i);
+    }
 }
+
 
