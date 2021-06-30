@@ -8,4 +8,24 @@
 int     get_third_largest(int *tab, int size)
 {
         // write your algo here
+    int x=0
+    int y=0
+    int z=0;
+    for(int i=0;i<size;i++)
+    {
+        if (tab[i]>x)
+        {
+            z=y;
+            y=x;
+            x=tab[i];
+        }
+        if (tab[i]>y && tab[i]<x)
+        {
+            z=y;
+            y=tab[i];
+        }
+        if (tab[i]>z && tab[i]<y)
+            z=tab[i];
+    }
+    return z;
 }
